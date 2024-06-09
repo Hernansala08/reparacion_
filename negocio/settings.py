@@ -79,7 +79,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'db_reparacion',
-        'USER': 'andares',
+        'USER': 'andres',
         'PASSWORD': '456',
         'HOST': 'localhost',
         'PORT': '',
