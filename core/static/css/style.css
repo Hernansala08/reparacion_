@@ -376,11 +376,10 @@ header a {
 
 .flip-card {
     background-color: transparent;
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     perspective: 1000px;
     border-radius: 20px;
-    z-index: 1;
 }
 
 .flip-card-inner {
@@ -392,7 +391,6 @@ header a {
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 20px;
-    overflow: hidden;
 }
 
 .flip-card:hover .flip-card-inner {
@@ -413,8 +411,6 @@ header a {
     background-color: #bbb;
     color: black;
     border-radius: 20px;
-    display: flex;
-    overflow: hidden;
 }
 
 .flip-card-back {
