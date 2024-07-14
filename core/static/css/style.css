@@ -414,6 +414,11 @@ header a {
     border-radius: 20px;
 }
 
+.flip-card-front img {
+    width: 100%;
+    height: auto;
+}
+
 .flip-card-back {
     background-color: #2980b9;
     color: white;
