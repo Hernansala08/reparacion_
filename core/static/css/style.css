@@ -392,6 +392,7 @@ header a {
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 20px;
+    overflow: hidden;
 }
 
 .flip-card:hover .flip-card-inner {
@@ -414,9 +415,12 @@ header a {
     border-radius: 20px;
 }
 
-.flip-card-front img {
+.flip-card-front img,
+.flip-card-back img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover; /* Mantiene la proporción de la imagen y se ajusta al tamaño del contenedor */
+    border-radius: 20px;
 }
 
 .flip-card-back {
