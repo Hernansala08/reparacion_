@@ -413,15 +413,6 @@ header a {
     border-radius: 20px;
 }
 
-.flip-card-front img {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .flip-card-back {
     background-color: #2980b9;
     color: white;
