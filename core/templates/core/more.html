@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="{% url 'home' %}">Inicio</a>
+            <a href="">Contacto</a>
+            <a href="">Info</a>
+        </nav>
+    </header>
+
+    <div class="title">NUESTROS TRABAJOS</div>
+
+    <div class="container">
+        <div class="card__container">
+            {% if Celulares %}
+            {% for Celular in Celulares %}
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="" alt="{{ Dispositivo.modelo }}" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>{{ Celular.modelo }}</h1>
+                        <hr>
+                        <p>{{ Celular.status }}</p>
+                        <hr>
+                        <p>{{ Celular.descripcion }}</p>
+                        <hr>
+                        <p>{{ Celular.created_date }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            {% elif Laptops %}
+            {% for Laptop in Laptops %}
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="" alt="{{ Dispositivo.modelo }}" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>{{ Laptop.modelo }}</h1>
+                        <hr>
+                        <p>{{ Laptop.status }}</p>
+                        <hr>
+                        <p>{{ Laptop.descripcion }}</p>
+                        <hr>
+                        <p>{{ Laptop.created_date }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            {% else %}
+            {% for Pc in PCs %}
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="" alt="{{ Dispositivo.modelo }}" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>{{ Pc.modelo }}</h1>
+                        <hr>
+                        <p>{{ Pc.status }}</p>
+                        <hr>
+                        <p>{{ Pc.descripcion }}</p>
+                        <hr>
+                        <p>{{ Pc.created_date }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            {% endif %}
+        </div>
+
+    </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="">Inicio</a>
+            <a href="">Contacto</a>
+            <a href="">Info</a>
+        </nav>
+    </header>
+
+    <!-- carousel -->
+    <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="{% static 'img/LogPhone.jpg' %}">
+                <div class="content">
+                    <div class="author">REPARACION</div>
+                <!-- <div class="title">CELULARES</div> -->
+                    <div class="topic">CELULARES</div>
+                    <div class="des">
+                        <!-- lorem 50 -->
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button><a href="{% url 'celulares' %}">VER MAS</a></button>
+                        <button>LLAMAR</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static 'img/Laps.jpg' %}">
+                <div class="content">
+                    <div class="author">REPARACION</div>
+                <!-- <div class="title">LAPTOPS</div> -->
+                    <div class="topic">LAPTOPS</div>
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button><a href="{% url 'laptops' %}">VER MAS</a></button>
+                        <button>LLAMAR</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static 'img/serv.jpg' %}">
+                <div class="content">
+                    <div class="author">ASISTENCIA</div>
+                <!-- <div class="title">SERVICIO TECNICO</div> -->
+                    <div class="topic">SERVICIO TECNICO</div>
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button><a href="{% url 'more' %}">VER MAS</a></button>
+                        <button>LLAMAR</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static 'img/pc.jpg' %}">
+                <div class="content">
+                    <div class="author">REPARACION</div>
+                <!-- <div class="title">PC ESCRITORIO</div> -->
+                    <div class="topic">PC ESCRITORIO</div>
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button><a href="{% url 'pcs' %}">VER MAS</a></button>
+                        <button>LLAMAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="{% static 'img/LogPhone.jpg' %}">
+                <div class="content">
+                    <div class="title">
+                        Celulares
+                    </div>
+                    <div class="description">
+                        Local
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static 'img/LogLaps.webp' %}">
+                <div class="content">
+                    <div class="title">
+                        Laptops
+                    </div>
+                    <div class="description">
+                        Local
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static 'img/LogAsis.jpg' %}">
+                <div class="content">
+                    <div class="title">
+                        Servicio tecnico
+                    </div>
+                    <div class="description">
+                        Online/Domicilio
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static 'img/LogPc.webp' %}">
+                <div class="content">
+                    <div class="title">
+                        Pc escritorio
+                    </div>
+                    <div class="description">
+                        Local
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+
+    <script src="{% static 'js/app.js' %}"></script>
+</body>
+</html>
