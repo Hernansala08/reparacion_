@@ -416,6 +416,8 @@ header a {
     background-color: #bbb;
     color: black;
     border-radius: 20px;
+    display: flex;
+    overflow: hidden;
 }
 
 .flip-card-front img {
