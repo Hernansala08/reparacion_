@@ -4,7 +4,7 @@ from django.db import models
 class Celular(models.Model):
     modelo = models.CharField(max_length=255)
     status = models.CharField(max_length=255)
-    imagen = models.ImageField(upload_to='photos/%Y/%m/%d/')
+    imagen = models.ImageField(upload_to='sprites/')
     descripcion = models.CharField(max_length=255)
     created_date = models.DateTimeField(auto_now_add=True)
 
@@ -14,7 +14,7 @@ class Celular(models.Model):
 class Laptop(models.Model):
     modelo = models.CharField(max_length=255)
     status = models.CharField(max_length=255)
-    imagen = models.ImageField(upload_to='photos/%Y/%m/%d/')
+    imagen = models.ImageField(upload_to='sprites/')
     descripcion = models.CharField(max_length=255)
     created_date = models.DateTimeField(auto_now_add=True)
 
@@ -24,7 +24,7 @@ class Laptop(models.Model):
 class PC(models.Model):
     modelo = models.CharField(max_length=255)
     status = models.CharField(max_length=255)
-    imagen = models.ImageField(upload_to='photos/%Y/%m/%d/')
+    imagen = models.ImageField(upload_to='sprites/')
     descripcion = models.CharField(max_length=255)
     created_date = models.DateTimeField(auto_now_add=True)
 
